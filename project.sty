@@ -27,7 +27,7 @@
 \usepackage{multicol}
 \usepackage{changepage}
 \usepackage{subfigure}
-
+\allowdisplaybreaks
 
 \usepackage{amsthm}
 \newtheorem{theorem}{定理}[section]       % 定理，按 section 编号
@@ -43,10 +43,10 @@
 \newtheorem{example}[theorem]{例子}        % 例子
 
 % 中文支持（Overleaf 可用字体）
-\usepackage{ctex}
+% \usepackage{ctex}
 
 % GEOMETRY 
-\addtolength{\parskip}{\baselineskip}
+% \addtolength{\parskip}{\baselineskip}
 \pagestyle{myheadings}
 \oddsidemargin=1.24mm
 \evensidemargin=-5.4mm
@@ -105,6 +105,7 @@
      \par\nobreak
      \vskip 15pt
      \hrule height 0.4pt
+     \vspace{2em} % ← 增加章节标题与正文的间距
   }}
 \def\@makeschapterhead#1{
   {\parindent \z@ \raggedright \normalfont
